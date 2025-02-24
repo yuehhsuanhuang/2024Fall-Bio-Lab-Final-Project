@@ -1,12 +1,11 @@
 # 2024Fall-Bio-Lab-Final-Project
 2024 Fall Biomedical Engineering Final Project
 
-This repository is the
 Please refer to this demo video on YouTube for further information: https://youtu.be/zepfCfav4Hw
+Dataset link: https://drive.google.com/file/d/1j-J7jjS6nrT-DEkroOHZ-8p3woo8I_vm/view?usp=sharing
 
 Note: 
-
-This demo use v8 as the primary example (Please refer to the Dataset folder to check for v8.txt). 
+This demo use v8 as the primary example (Please refer to the Dataset link to check for v8.txt). 
 
 To simulate the real-time scenario, we use a Python loop with time.sleep() to simulate reading EEG and ECG signals every minute, then return the asleepTime (AT) "00:15" (falling asleep at the 15th minute) to the Arduino set. The Arduino set calculates the sleep duration (SD) + asleep time (AT) = alarm time (BT). Using the DS3231 time module, it checks the time, and when BT is reached, the buzzer goes off.
 
